@@ -1,6 +1,2 @@
 public class PopPlaylist extends Playlist{
-
-    public PopPlaylist(String name) {
-        super(name);
-    }
-}
+} //extending Playlist to Pop Playlist allows for creation of different genre playlists

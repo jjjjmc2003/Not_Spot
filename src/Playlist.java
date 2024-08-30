@@ -3,14 +3,7 @@ import java.util.List; //Importing Lists here gonna need them to store songs
 
 public class Playlist { //class setup
     private  String name; //initializing name and List songs
-    private  List<Song> songs;
-
-    public Playlist (String name){ // I added a constructor here and used polymorphism by extending the other subclass and inheriting
-       this.name = name;          // the constructor using super() so that it made it easier to test. I ran into a nightmare testing because
-        this.songs = new ArrayList<>(); // I originally made a constructor for each subclass of Playlist, so I made a separate constructor for
-                                        //Pop Rock and Jazz Playlist. Which led to a headache trying to run,so I decided to add this and use
-                                        // polymorphism
-    }
+    private  List<Song> songs = new ArrayList<>(); //
 
     public void addSong(Song song) {
         songs.add(song); //add song method
@@ -29,6 +22,9 @@ public class Playlist { //class setup
     }
 
     public String getName() {
-        return name;  //to print out name
+        return name;  //to print out name of playlists
+    }
+    public void setName(String name){
+        this.name = name; // setter to set the name of the playlists
     }
 }

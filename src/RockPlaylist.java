@@ -1,6 +1,3 @@
 public class RockPlaylist extends Playlist {
-    public RockPlaylist(String name) {
-        super(name);
-    }
-}
+} //Rock Playlist inherits Playlist will be usefull for our different playlists we create
 
